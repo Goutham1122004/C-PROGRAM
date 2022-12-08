@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+   float bonus,currentyear,joinedyear;
+   printf("CURRENT YEAR=");
+   scanf("%f",&currentyear);
+   printf("JOINED YEAR=");
+   scanf("%f",&joinedyear);
+   bonus=currentyear-joinedyear;
+   if(bonus>3)
+   {
+       printf("BONUS FOR RS.2500");
+   }
+   else
+   {
+       printf("NO BONUS");
+   }
+
+    return 0;
+}
