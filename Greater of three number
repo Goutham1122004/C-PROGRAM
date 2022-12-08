@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("FIRST NUMBER=");
+    scanf("%d",&a);
+    printf("SECOND NUMBER=");
+    scanf("%d",&b);
+    printf("THIRD NUMBER=");
+    scanf("%d",&c);
+    if(a>b&&a>c)
+    {
+        printf("FIRST NUMBER IS GREATER");
+    }
+    else if(b>a&&b>c)
+    {
+        printf("SECOND NUMBER IS GREATER");
+    }
+    else
+    {
+      printf("THIRD NUMBER IS GREATER");  
+    }
+    return 0;
+}
