@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main()
+{
+ float q,p,dis,totalprice,amt;
+ printf("PURCHASE=");
+ scanf("%f",&p);
+ printf("QUALITY=");
+ scanf("%f",&q);
+ totalprice=p*q;
+ if(q>1000)
+ {
+    dis=totalprice*10/100;
+    amt=totalprice-dis;
+ }
+ printf("%f",amt);
+
+    return 0;
+}
