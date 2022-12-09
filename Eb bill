@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+int u;
+printf("UNITS=");
+scanf("%d",&u);
+if(u>=1&&u<=100)
+{
+    printf("AMOUNT RS.300 PER UNIT");
+}
+else if(u>=101&&u<=250)
+{
+    printf("AMOUNT RS.450 PER UNIT");
+}
+else if(u>=251&&u<=350)
+{
+    printf("AMOUNT RS.500 PER UNIT");
+}
+else 
+{
+    printf("AMOUNT RS.700 PER UNIT");
+}
+    return 0;
+}
