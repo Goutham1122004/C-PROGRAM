@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+int a,b,c,d;
+printf("FIRST VALUE=");
+scanf("%d",&a);
+printf("SECOND VALUE=");
+scanf("%d",&b);
+c=b;
+printf("FIRST VALUE=%d",c);
+d=a;
+printf("SECOND VALUE=%d",d);
+return 0;
+}
