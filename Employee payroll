@@ -1,0 +1,19 @@
+int main()
+{
+    int bs,da,hra,gs;
+    printf("BASICS SALARY=");
+    scanf("%d",&bs);
+    if(bs<1500)
+    {
+        hra=(bs*10)/100;
+        da=(bs*98)/100;
+    }
+    else if(bs>=1500)
+    {
+        hra=500;
+        da=(bs*98)/100;
+    }
+    gs=bs+hra+da;
+    printf("GROSS SALARY=%d",gs);
+    return 0;
+}
