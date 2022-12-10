@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+ char t,e,v,g,a,f;
+ printf("YOU HAVE CHOSEN=");
+ scanf("%s",&t);
+ if(t=='e'||t=='E')
+ printf("EXCELLENT");
+ else if(t=='v'||t=='V')
+ printf("VERY GOOD");
+ else if(t=='g'||t=='G')
+ printf("GOOD");
+ else if(t=='a'||t=='A')
+ printf("AVERAGE");
+ else if(t=='f'||t=='F')
+ printf("fail");
+    return 0;
+}
