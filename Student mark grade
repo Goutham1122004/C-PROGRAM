@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+int mark;
+printf("MARK=");
+scanf("%d",&mark);
+if(mark>=90)
+printf("A GRADE");
+else if(mark>=80)
+printf("B GRADE");
+else if(mark>=70)
+printf("C GRADE");
+else if(mark>=60)
+printf("D GRADE");
+else if(mark>=50)
+printf("E GRADE");
+else if(mark<50)
+printf("FAIL");
+return 0;
+}
