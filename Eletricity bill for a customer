@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+int ci,uc,amt,sc,tot,a;
+char cn;
+printf("CUSTOMER IDNO=");
+scanf("%d",&ci);
+printf("CUSTOMER NAME=");
+scanf("%s",&cn);
+printf("UNIT CONSUMED=");
+scanf("%d",&uc);
+if(uc<=199)
+{
+  amt=uc*1.20;
+  printf("AMOUNT CHARGES @1.20 PER UNIT=%d",amt);
+}
+else if(uc>=200&&uc<400)
+{
+    amt=uc*1.50;
+    printf("AMOUNT CHARGES @1.50 PER UNIT=%d",amt);
+}
+else if(uc>=400&&uc<600)
+{
+    amt=uc*1.80;
+    printf("AMOUNT CHARGES @1.80 PER UNIT=%d",amt);
+    sc=uc*15/100;
+    printf("\nSURCHANGE AMOUNT=%d",sc);
+    a=amt+sc;
+    printf("\nNET AMOUNT PAID BY THE CUSTOMER=%d",a);
+}
+else if(uc>=600)
+{
+    amt=uc*2.00;
+    printf("AMOUNT CHARGES @2.00 PER UNIT=%d",amt);
+    sc=uc*15/100;
+    printf("\nSURCHANGE AMOUNT=%d",sc);
+    a=amt+sc;
+    printf("\nNET AMOUNT PAID BY THE CUSTOMER=%d",a);
+}
+    return 0;
+}
