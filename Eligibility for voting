@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+int year;
+printf("YEAR=");
+scanf("%d",&year);
+if(year<18)
+    printf("NOT ELIGIBLE FOR VOTING");
+else
+    printf("ELIGIBLE FOR VOTING");
+    return 0;
+}
