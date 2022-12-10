@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+int num;
+printf("NUMBER=");
+scanf("%d",&num);
+if(num>0)
+printf("NUMBER IS POSITIVE");
+else if(num<0)
+printf("NUMBER IS NEGATIVE");
+if(num%2==0)
+printf("\nNUMBER IS EVEN");
+else if(num%2!=0)
+printf("\nNUMBER IS ODD");
+return 0;
+}
