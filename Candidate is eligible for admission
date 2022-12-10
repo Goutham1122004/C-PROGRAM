@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+   int a,b,c,tot,total;
+   printf("MATHS=");
+   scanf("%d",&a);
+   printf("PHYSICS=");
+   scanf("%d",&b);
+   printf("CHEMISTRY=");
+   scanf("%d",&c);
+   total=a+b+c;
+   tot=a+b;
+   if(total>190&&tot>140)
+   printf("THE CANDIDATE IS ELIGIBLE FOR ADMISSION");
+   else
+   printf("THE CANDIDATE IS NOT ELIGIBLE FOR ADMISSION");
+    return 0;
+}
