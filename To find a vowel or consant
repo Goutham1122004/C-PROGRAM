@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+  char a;
+  printf ("ALPHABET=");
+  scanf ("%c",&a);
+  
+  if (a=='a'|| a=='A')
+  printf("IT IS A VOWEL LETTER");
+  
+  else if (a == 'e' || a == 'E')
+  printf("IT IS A VOWEL LETTER");
+    
+  else if (a == 'i' || a == 'I')
+  printf("IT IS A VOWEL LETTER");
+    
+  else if (a == 'o' || a == 'O')
+  printf("IT IS A VOWEL LETTER");
+    
+  else if (a == 'u' || a == 'U')
+  printf("IT IS A VOWEL LETTER");
+  
+  else
+  printf("Consonant");
+  
+  return 0;
+}
