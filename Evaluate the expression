@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+  double x,sum;
+  printf("N=");
+  scanf("%lf",&x);
+  sum=pow((sqrt(x)+1),6)+pow((sqrt(x)-1),6);
+  printf("Answer=%lf",sum);                                                                                                                                                                             "")
+  return 0;
+}
