@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+  int a,b;
+  printf("ENTER THE FIRST VALUE=");
+  scanf("%d",&a);
+  printf("ENTER THE SECOND NUMBER=");
+  scanf("%d",&b);
+  if(a>b)
+  {
+    printf("IT IS A BIGGEST VALUE");  
+  }
+  else 
+  {
+    printf("IT IS NOT A BIGGEST VALUE");
+  }
+    return 0;
+}
