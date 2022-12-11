@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+float n,i,tot=0,a;
+printf("NUMBER=");
+scanf("%f",&n);
+for(i=1;i<=n;i++)
+  a=i*i;
+  tot=tot+1/i;
+  printf("ANSWER=%f",tot);
+return 0;
+}
+
