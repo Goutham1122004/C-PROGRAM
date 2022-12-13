@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+char z;
+printf("LETTERS=");
+scanf("%s",&z);
+switch(z)
+{
+    case'a':
+    case'A':
+    case'e':
+    case'E':
+    case'i':
+    case'I':
+    case'o':
+    case'O':
+    case'u':
+    case'U':
+    printf("IT IS VOWEL LETTER");
+    break;
+    default:
+    printf("IT IS NOT VOWEL LETTER");
+}
+
+    return 0;
+}
