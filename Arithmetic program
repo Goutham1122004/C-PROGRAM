@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    printf("Y=");
+    scanf("%d",&y);
+    x=y+3;
+    printf("result=%d",x);
+    return 0;
+}
