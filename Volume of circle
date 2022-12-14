@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float r,vol;
+    printf("R=");
+    scanf("%f",&r);
+    vol=(4/3)*(3.14)*r*r*r;
+    printf("VOLUME OF SPHERE=%f",vol);
+    return 0;
+}
