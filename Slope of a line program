@@ -1,0 +1,14 @@
+
+#include<stdio.h>
+
+int main()
+{
+    float x1,x2,y1,y2,dy,dx,slope;
+    printf("ENTER THE VALUE OF X1,X2,Y1,Y2=");
+    scanf("%f%f%f%f",&x1,&x2,&y1,&y2);
+    dy=y2-y1;
+    dx=x2-x1;
+    slope=dy/dx;
+    printf("SLOPE =%f",slope);
+    return 0;
+}
