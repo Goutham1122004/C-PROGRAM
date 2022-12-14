@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float r,cir;
+    printf("R=");
+    scanf("%f",&r);
+    cir=2*3.14*r;
+    printf("CIRCUMFERENCE=%f",cir);
+    return 0;
+}
