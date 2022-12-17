@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    float l,b,r,per,cir;
+    printf("LENGTH =");
+    scanf("%f",&l);
+    printf("BREADTH=");
+    scanf("%f",&b);
+    printf("RADIUS =");
+    scanf("%f",&r);
+    per=2*(l*b);
+    cir=2*3.14*r;
+    printf("PERIMETER OF RECTANGLE =%f\n",per);
+    printf("CIRCUMFERENCE OF CIRCLE=%f",cir);
+    return 0;
+}
