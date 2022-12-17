@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+ int a,b,x,y,ans;
+ printf("A=");
+ scanf("%d",&a);
+ printf("B=");
+ scanf("%d",&b);
+ printf("x=");
+ scanf("%d",&x);
+ printf("y=");
+ scanf("%d",&y);
+ ans=5*b*b*x-3*a*y*y-8*b*b*x+10*a*y;
+ printf("ANSWER=%d",ans);
+ return 0;
+}
