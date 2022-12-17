@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int len=1189,wid=841,i,n;
+    for(i=0;i<=8;i++)
+    {
+    printf("A%d=%d*%d\n",i,len,wid);
+    n=len;
+    len=wid;
+    wid=n/2;
+    }
+    return 0;
+}
