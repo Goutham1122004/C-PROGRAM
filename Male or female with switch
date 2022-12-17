@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    char gender;
+    printf("GENDER=");
+    scanf("%c",&gender);
+    switch(gender)
+    {
+        case 'm':
+        printf("MALE");
+        break;
+        
+        case 'f':
+        printf("FEMALE");
+        break;
+    }
+
+    return 0;
+}
