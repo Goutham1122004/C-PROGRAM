@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,o;
+    printf("OPERATION   =");
+    scanf("%d",&o);
+    printf("FIRST VALUE =");
+    scanf("%d",&a);
+    printf("SECOND VALUE=");
+    scanf("%d",&b);
+    switch(o)
+    {
+        case 1:
+        c=a+b;
+        printf("ADDITION  =%d",c);
+        break;
+        
+        case 2:
+        c=a-b;
+        printf("SUBRACTION  =%d",c);
+        break;
+        
+        case 3:
+        c=a*b;
+        printf("MULTIPLICATION=%d",c);
+        break;
+        
+        case 4:
+        c=a/b;
+        printf("DIVISION =%d",c);
+        break;
+        
+        default:
+        printf("INPUT NUMBER IS INVALID");
+        
+        return 0;
+    }
+}
+
