@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float x1,x2,y1,y2,a,b,dis,km,nt;
+    printf("X1=");
+    scanf("%f",&x1);
+    printf("X2=");
+    scanf("%f",&x2);
+    printf("Y1=");
+    scanf("%f",&y1);
+    printf("y2=");
+    scanf("%f",&y2);
+    a=x2-x1;
+    b=x2-x1;
+    dis=sqrt((a*a)+(b)*(b));
+    km=dis*100;
+    printf("DISTANCE BETWEEN THE TWO PLACES IN KILOMETERS     =%f\n",km);
+    nt=km/1.852;
+    printf("DISTANCE BETWEEN THE TWO PLACES IN NAUTICAL MILES=%f",nt);
+    return 0;
+}
