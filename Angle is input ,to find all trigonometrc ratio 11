@@ -1,0 +1,16 @@
+include<stdio.h>
+#include<math.h>
+int main()
+{
+    float degree, radian;
+    printf("DEGREE=");
+    scanf("%f",&degree);
+    radian=(3.14/180)*degree;
+    printf("SIN(%f)=%f\n",degree,sin(radian));
+    printf("COS(%f)=%f\n",degree,cos(radian));
+    printf("TAN(%f)=%f\n",degree,tan(radian));
+    printf("COSEC(%f)=%f\n",degree,1/sin(radian));
+    printf("SEC(%f)=%f\n",degree,1/cos(radian));
+    printf("COT(%f)=%f\n",degree,1/tan(radian));
+    return 0;
+}
