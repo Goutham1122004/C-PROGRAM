@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+float a,b,c,d,res,sum;
+printf("A=");
+scanf("%f",&a);
+printf("B=");
+scanf("%f",&b);
+printf("C=");
+scanf("%f",&c);
+printf("D=");
+scanf("%float",&d);
+res=7.7*b*(c*d+a)/c-1.8+2*b;
+sum=res/(c+a)*(1/d);
+printf("ANSWER=%f",sum);
+return 0;
+
+}
+
