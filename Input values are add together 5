@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int n,i=0;
+    printf("ENTER THE VALUE=");
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        i=i+n%10;
+        n=n/10;
+    }
+    printf("ANSWER=%d",i);
+    return 0;
+}
