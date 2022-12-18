@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    int ans;
+    ans=5%3/8*3+4;
+    printf("ANSWER=%d",ans);
+    return 0;
+}
