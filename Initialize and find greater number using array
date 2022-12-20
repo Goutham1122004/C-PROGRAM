@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a[7]={2,4,6,7,8,9,0},i,max;
+    max=a[0];
+    for(i=0;i<7;i++)
+    {
+        if(max<a[i])
+        max=a[i];
+    }
+    printf("LARGEST VALUE =%d",max);
+    return 0;
+}
+
