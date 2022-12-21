@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a[20],n,i,ele;
+    printf("ENTER THE ARRAY SIZE=");
+    scanf("%d",&n);
+    printf("INPUT VALUES=");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("ENTER THE ELEMENT=");
+    scanf("%d",&ele);
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==ele)
+           {
+               printf("THE ELEMENT FOUND");
+               return 0;
+           }
+    }
+       printf("THE ELEMENT IS NOT FOUND");
+}
+
