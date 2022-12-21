@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int a[30],i,n,pos;
+    printf("ENTER THE NUMMBER=");
+    scanf("%d",&n);
+    printf("INPUT VALUES=");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("ENTER THE DELECTION ELEMENT=");
+    scanf("%d",&pos);
+    if(pos>=n+i)
+       printf("DELECTION IS NOT POSSIBLE");
+    else
+    {
+        for(i=pos-1;i<n-1;i++)
+           a[i]=a[i+1];
+            printf("ANSWER=");
+        for(i=0;i<n-1;i++)
+           printf("%d",a[i]);
+    }
+    return 0;
+}
