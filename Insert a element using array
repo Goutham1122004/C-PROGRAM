@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a[20],n,i,pos,val;
+    printf("ENTER THE VALUE= ");
+    scanf("%d",&n);
+    printf("INPUT VALUES=");
+    for(i=0;i<n;i++)
+       scanf("%d",&a[i]);
+    printf("ENTER THE POSITION  OF ARRAY=");
+    scanf("%d",&pos);
+    printf("ENTER THE VALUES OF NEW ELEMENT=");
+    scanf("%d",&val);
+    for(i=n-1;i>=pos-1;i--)
+        a[i+1]=a[i];
+    a[pos-1]=val;
+    printf("THE NEW VALUES OF ARRAY=");
+    for(i=0;i<=n;i++)
+       printf("%d",a[i]);
+    return 0;
+}
+
