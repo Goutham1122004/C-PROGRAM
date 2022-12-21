@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int roll[10],a[10],b[10],c[10],tot[10],per[10],i,n;
+    char name[25];
+    printf("HOW MANY STUDENTS=");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("ROLL NO=");
+        scanf("%d",&roll[i]);
+        printf("NAME =");
+        scanf("%s",&name[i]);
+        printf("MATHS =");
+        scanf("%d",&a[i]);
+        printf("PHYSICS=");
+        scanf("%d",&b[i]);
+        printf("ENGLISH=");
+        scanf("%d",&c[i]);
+        tot[i]=a[i]+b[i]+c[i];
+        per[i]=tot[i]/3;
+        printf("STUDENT TOTAL=%d\nSTUDENT PERCENTAGE=%d\n",tot[i],per[i]);
+    }
+        return 0;
+    
+    
+    }
