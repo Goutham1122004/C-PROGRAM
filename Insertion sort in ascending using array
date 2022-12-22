@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int a[20],n,i,j,pos,val,x;
+    printf("ENTER THE VALUE= ");
+    scanf("%d",&n);
+    printf("INPUT VALUES=");
+    for(i=0;i<n;i++)
+       scanf("%d",&a[i]);
+    printf("ENTER THE POSITION  OF ARRAY=");
+    scanf("%d",&pos);
+    printf("ENTER THE VALUES OF NEW ELEMENT=");
+    scanf("%d",&val);
+    for(i=n-1;i>=pos-1;i--)
+        a[i+1]=a[i];
+    a[pos-1]=val;
+    printf("THE NEW VALUES OF ARRAY=");
+    for(i=0;i<=n;i++)
+       printf("\n%d",a[i]);
+       for(i=0;i<n;i++)
+       {
+           for(j=i+1;j<n;j++)
+           {
+               if(a[i]>a[j])
+               {
+                x=a[i];
+                a[i]=a[j];
+                a[j]=x;
+               }
+           }
+       }
+       for(i=0;i<n;i++)
+       printf("ASCENDING ELEMENT=%d\n",a[i]);
+    return 0;
+}
