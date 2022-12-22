@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+ int a[5],b[5],c[10],i,j,x;
+ printf("FIRST INPUT VALUE=");
+ for(i=0;i<5;i++)
+ {
+    scanf("%d",&a[i]);
+ }
+ printf("SECOND INPUT VALUE=");
+ for(i=0;i<5;i++)
+ {
+     scanf("%d",&b[i]);
+ }
+ for(i=0;i<5;i++)
+ {
+     c[i]=a[i];
+     c[i+5]=b[i];
+ }
+ for(i=0;i<10;i++)
+ printf("\nANSWER=%d",c[i]);
+ for(i=0;i<10;i++)
+ {
+     for(j=i+1;j<10;j++)
+     {
+         if(c[i]<c[j])
+         {
+             x=c[i];
+             c[i]=c[j];
+             c[j]=x;
+         }
+     }
+ }
+     for(i=0;i<10;i++)
+     printf("\nMEREG SORT=%d",c[i]);
+ return 0;
+}
