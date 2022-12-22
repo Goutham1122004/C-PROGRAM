@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[20],b[20];
+    printf("FIRST VALUE=");
+    scanf("%s",a);
+    printf("SECOND VALUE=");
+    scanf("%s",b);
+    printf("%s",strcat(a,b));
+    return 0;
+}
