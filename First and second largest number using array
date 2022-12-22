@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+    int a[20],i,n,max1,max2;
+    printf("ENTER THE NUMBER=");
+    scanf("%d",&n);
+    printf("INPUT VALUES=");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    max1=INT_MIN;
+    max2=INT_MIN;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>max1)
+        {
+            max2=max1;
+            max1=a[i];
+        }
+        else if(a[i]<max1&&a[i]>max2)
+        {
+            max2=a[i];
+        }
+    }
+    printf("FIRST LARGEST NUMBER =%d\n",max1);
+    printf("SECOND LARGEST NUMBER=%d",max2);
+    return 0;
+}
