@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("ENTER THE FIRST VALUE=");
+    scanf("%d",&a);
+    printf("ENTER THE SECOND VALUE=");
+    scanf("%d",&b);
+    if(a==b)
+       printf("THEY ARE EQUAL");
+    else
+       printf("THEY ARE NOT EQUAL");
+    return 0;
+} 
