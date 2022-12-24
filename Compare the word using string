@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[20],b[20];
+    int c;
+    printf("ENTER THE FIRST WORD=");
+    scanf("%s",a);
+    printf("ENTER THE SECOND WORD=");
+    scanf("%s",b);
+    c=strcmp(a,b);
+    if(c==0)
+    printf("WORD ARE SAME");
+    else
+    printf("WORD ARE NOT SAME");
+    return 0;
+}
