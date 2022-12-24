@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[20];
+    printf("ENTER THE WORD=");
+    scanf("%s",a);
+    printf("ANSWER=%d",strlen(a));
+    return 0;
+}
