@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int ru,hun=0,fif=0,ten=0,twe=0,two=0,one=0;
+    printf("RUPEES=");
+    scanf("%d",&ru);
+    if(ru>=100)
+    {
+        hun=ru/100;
+        ru=ru%100;
+    }
+    if(ru>=50)
+    {
+        fif=ru/50;
+        ru=ru%50;
+    }
+    if(ru>=20)
+    {
+        twe=ru/20;
+        ru=ru%20;
+    }
+    if(ru>=10)
+    {
+        ten=ru/10;
+        ru=ru%10;
+    }
+    if(ru>=2)
+    {
+        two=ru/2;
+        ru=ru%2;
+    }
+    if(ru>=1)
+    {
+        one=ru/1;
+        ru=ru%1;
+    }
+    printf("HUNDRED=%d\nFIFTY=%d\nTWENTY=%d\nTEN=%d\nTWO=%d\nONE=%d\n",hun,fif,twe,ten,two,one);
+    return 0;
+}
