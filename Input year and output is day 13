@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+    int year,basicyear=1900,leap,rem,totday,day;
+    printf("ENTER THE YEAR=");
+    scanf("%d",&year);  
+    year=(year-1)-basicyear;
+    leap=year/4;
+    rem=year-leap;
+    totday=(rem*365)+(leap*366)+1;
+    day=totday%7;
+    if(day==0)
+    {
+        printf("MONDAY");
+    }
+    else if(day==1)
+    {
+        printf("TUESDAY");
+    }
+    else if(day==2)
+    {
+        printf("WEDNESDAY");
+    }
+    else if(day==3)
+    {
+        printf("THURSDAY");
+    }
+    else if(day==4)
+    {
+        printf("FRIDAY");
+    }
+    else if(day==5)
+    {
+        printf("SATURDAY");
+    }
+    else if(day==6)
+    {
+        printf("SUNDAY");
+    }
+    else 
+    {
+        printf("WRONG INPUT");
+    }
+    
+}
