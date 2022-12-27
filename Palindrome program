@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int n,r,y=0,temp;
+    printf("ENTER THE VALUE=");
+    scanf("%d",&n);
+    temp=n;
+    while(n>0)
+    {
+        r=n%10;
+        y=(y*10)+r;
+        n=n/10;
+    }
+    if(temp==y)
+      printf("IT IS PALINDROME");
+    else
+      printf("IT IS NOT PALINDROME");
+    return 0;
+}
