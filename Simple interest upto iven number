@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    float p,n,r,a;
+    int i,interest;
+     printf("A=");
+     scanf("%f",&a);
+    for(i=1;i<=a;i++)
+    {
+        printf("\nP=");
+        scanf("%f",&p);
+        printf("N=");
+        scanf("%f",&n);
+        printf("R=");
+        scanf("%f",&r);
+        interest=(p*n*r)/100;
+        printf("INTEREST=%d",interest);
+    }
+
+    return 0;
+}
+
