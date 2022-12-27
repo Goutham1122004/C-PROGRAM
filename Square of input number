@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+   int n,a;
+   printf("INPUT NUMBER= ");
+   scanf("%d",&n);
+   a=n*n;
+   printf("SQUARE OF INPUT NUMBER=%d",a);
+    return 0;
+}
