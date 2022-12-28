@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+   int a,b;
+   printf("A=");
+   scanf("%d",&a);
+   printf("B=");
+   scanf("%d",&b);
+   (a>b)?(printf("A IS GREATER ")):(printf("B IS GREATER"));
+    return 0;
+}
