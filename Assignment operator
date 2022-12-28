@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+   int a,b;
+   printf("A=");
+   scanf("%d",&a);
+    printf("B=");
+   scanf("%d",&b);
+   a+=b;
+   printf("ADD=%d\n",a);
+   a-=b;
+   printf("SUB=%d\n",a);
+   a*=b;
+   printf("MULTI=%d\n",a);
+   a/=b;
+   printf("DIV=%d\n",a);
+   a%=b;
+   printf("MOD=%d\n",a);
+    return 0;
+}
+
