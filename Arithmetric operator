@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("A=");
+    scanf("%d",&a);
+    printf("B=");
+    scanf("%d",&b);
+    c=a+b;
+    printf("ADDITION=%d\n",c);
+     c=a-b;
+    printf("SUBRATION=%d\n",c);
+     c=a*b;
+    printf("MULTIPLICATION=%d\n",c);
+     c=a/b;
+    printf("DIVISION=%d\n",c);
+     c=a%b;
+    printf("MODULUS=%d\n",c);
+     c=++a;
+    printf("INCREMENT=%d\n",c);
+     c=--b;
+    printf("DECREMENT=%d\n",c);
+}
