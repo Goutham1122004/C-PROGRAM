@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("long double is=%d bytes",sizeof(long double));
+
+    return 0;
+}
+
