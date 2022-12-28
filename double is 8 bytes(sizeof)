@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("double is=%d bytes",sizeof(double));
+
+    return 0;
+}
+
