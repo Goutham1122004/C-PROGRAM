@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+  int a,b,c;
+  printf("A=");
+  scanf("%d",&a);
+  printf("B=");
+  scanf("%d",&b);
+  printf("C=");
+  scanf("%d",&c);
+  printf("A GREATER THEN B AND B EQUAL TO C IS %d\n",(a>b)&&(b==c));
+  printf("A LESSER THEN B OR B GREATER THAN TO C IS %d\n",(a<b)||(b>c));
+  printf("A GREATER THEN B OR B NOT EQUAL TO C IS %d\n",(a>b)||(b!=c));
+    return 0;
+}
+
