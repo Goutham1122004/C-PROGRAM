@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   int a,b,c;
+   printf("A=");
+   scanf("%d",&a);
+   printf("B=");
+   scanf("%d",&b);
+   c=a&b;
+   printf("AND OPERATOR=%d\n",c);
+   c=a^b;
+   printf("XOR OPERATOR=%d\n",c);
+   c=-a;
+   printf("ONE COMPLEMENT OPERATOR=%d\n",c);
+   c=a<<b;
+   printf("LEFT SHIFT OPERATOR=%d\n",c);
+   c=a>>b;
+   printf("RIGHT SHIFT OPERATOR=%d\n",c);
+
+
+    return 0;
+}
+
