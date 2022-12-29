@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int i,w=841,h=1189,b;
+    for(i=0;i<9;i++)
+    {
+        printf("\nA%d=%d * %d",i,w,h);
+        b=h;
+        h=w;
+        w=b/2;
+       
+    }
+    return 0;
+}
