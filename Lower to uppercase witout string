@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+  char str1[10]="abyz";
+  int i;
+  for(i=0;i<4;i++)
+  {
+      printf("%c",str1[i]-32);
+  }
+    return 0;
+}
+
