@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main()
+{
+  int x=12;
+  do{
+      printf("%d\t",x);
+      x--;
+  }
+  while(x>7);
+    return 0;
+}
+
