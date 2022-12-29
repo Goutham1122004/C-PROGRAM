@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum;
+    printf("N=");
+    scanf("%d",&n);
+    sum=n*n*n;
+    printf("ANSWER=%d",sum);
+    return 0;
+    
+}
+
