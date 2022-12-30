@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,a[20],pos=0,neg=0,zero=0;
+    printf("ENTER THE VALUE=");
+    scanf("%d",&n);
+    printf("INPUT VALUES=");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>0)
+        {
+            pos++;
+        }
+         else if(a[i]<0)
+        {
+            neg++;
+        }
+         else if(a[i]==0)
+        {
+            zero++;
+        }
+    }
+    printf("POSITIVE NUMBERS=%d\n",pos);
+    printf("NEGETIVE NUMBERS=%d\n",neg);
+    printf("ZEROS=%d\n",zero);
+    return 0;
+}
