@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+int main()
+{
+ int lf,lcm;
+ printf("LENGTH FEET=");
+ scanf("%d",&lf);
+ lcm=lf*30;
+ printf("LENGTH CENTIMETER=%d",lcm);
+ return 0;
+}
+
