@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    char b[20];
+    int i,v=0,c=0;
+    printf("ENTER THE WORD=");
+    scanf("%s",b);
+    for(i=0;b[i]!=0;i++)
+    {
+         if((b[i]>=65&&b[i]<=90)||(b[i]>=97&&b[i]<=122))
+         {
+            if(b[i]=='a'||b[i]=='e'||b[i]=='i'||b[i]=='o'||b[i]=='u'||
+             b[i]=='A'||b[i]=='E'||b[i]=='I'||b[i]=='O'||b[i]=='U')
+               v++;
+            else 
+               c++;
+         }     
+    }
+    printf("VOWELS=%d\n",v);
+    printf("CONSONANT=%d\n",c);
+    return 0;
+}
+
+
