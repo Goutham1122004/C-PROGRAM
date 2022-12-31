@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int p=20;
+    int q=++p + p++;
+    printf("%d\n",p);
+    printf("%d",q);
+    return 0;
+}
