@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  	char a[100];
+  	int i, len;
+  	printf("ENTER THE STRING=");
+    scanf("%s",a);
+  	len=strlen(a);
+  	for(i=len-1;i>=0;i--)
+  	{
+  	}
+  	printf("REVERSE STRING=%s",a);
+  	return 0;
+}
