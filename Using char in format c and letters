@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+   char a[]="excellent";
+   printf("%c",a[5]);
+
+    return 0;
+}
