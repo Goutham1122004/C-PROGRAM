@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int m,p,c,tot;
+    printf("ENTER THE MATHS MARK=");
+    scanf("%d",&m);
+    printf("ENTER THE PHYSICS MARK=");
+    scanf("%d",&p);
+    printf("ENTER THE CHEMISTRY MARK=");
+    scanf("%d",&c);
+    tot=(m+p+c)/3;
+    if(m>=80&&p>=75&&c>=70&&tot>=80)
+    {
+        printf("THE STUDENT IS ELIGIBLE FOR ADMISSION");
+    }
+    else 
+    {
+        printf("THE STUDENT IS NOT ELIGIBLE FOR ADMISSION");
+    }
+    return 0;
+}
+
