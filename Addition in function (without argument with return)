@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int d;
+    d=add();
+    printf("%d",d);
+    return 0;
+}
+    int add()
+    {
+        int a,b,c;
+        scanf("%d",&a);
+        scanf("%d",&b);
+        c=a+b;
+        return c;
+    }
