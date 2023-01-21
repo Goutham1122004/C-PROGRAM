@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("a=");
+    scanf("%d",&a);
+    printf("b=");
+    scanf("%d",&b);
+    c=add(a,b);
+    printf("ANSWER=%d",c);
+    return 0;
+}
+ int add(a,b)
+ {
+    int d;
+     d=a+b;
+     return d;
+ }
+
