@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int f;
+    f=fact();
+    printf("%d",f);
+    return 0;
+}
+    int fact()
+    {
+        int n,i,y=1;
+        printf("N=");
+        scanf("%d",&n);
+        for(i=1;i<=n;i++)
+        {
+            y=y*i;
+        }
+        return y;
+    }
+
