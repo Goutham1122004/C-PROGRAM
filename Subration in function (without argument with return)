@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int d;
+    d=sub();
+    printf("%d",d);
+    return 0;
+}
+    int sub()
+    {
+        int a,b,c;
+        scanf("%d",&a);
+        scanf("%d",&b);
+        c=a-b;
+        return c;
+    }
+
