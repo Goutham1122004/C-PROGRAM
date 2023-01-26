@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    int *p,*q;
+    printf("A=");
+    scanf("%d",&a);
+    printf("B=");
+    scanf("%d",&b);
+    p=&a;
+    q=&b;
+    printf("ANSWER=%d",*p**q);
+    return 0;
+}
+
