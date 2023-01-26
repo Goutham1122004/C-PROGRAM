@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+  divide();
+    return 0;
+}
+   void divide()
+   {
+       int a,b,c;
+       scanf("%d",&a);
+       scanf("%d",&b);
+       c=a/b;
+       printf("%d",c); 
+   }
+
