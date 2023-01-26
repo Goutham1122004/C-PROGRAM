@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int d;
+    d=multiple();
+    printf("%d",d);
+    return 0;
+}
+    int multiple()
+    {
+        int a,b,c;
+        scanf("%d",&a);
+        scanf("%d",&b);
+        c=a*b;
+        return c;
+    }
+
