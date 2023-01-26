@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+   int n,i,f=1;
+   int *p;
+   printf("NUMBER=");
+   scanf("%d",&n);
+   p=&n;
+   for(i=1;i<=*p;i++)
+   {
+       f=f*i;
+   }
+    printf("ANSWER=%d",f);
+    return 0;
+}
