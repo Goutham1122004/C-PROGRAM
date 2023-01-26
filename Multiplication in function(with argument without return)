@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    multiple(a,b);
+    return 0;
+} 
+    void multiple(a,b)
+    {
+        int c;
+        c=a*b;
+        printf("%d",c);
+    }
