@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    c=add(&a,&b);
+    printf("ANSWER=%d",c);
+    return 0;
+}
+int add(int*a,int*b)
+{
+    int d;
+    d=*a * *b;
+    return d;
+}
