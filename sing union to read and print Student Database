@@ -1,0 +1,34 @@
+#include <stdio.h>
+union student {
+    char name[50];
+    int roll_no;
+    int dob;
+    char dep[20];
+    int gy;
+    int sy;
+    int mn;
+    char email;
+};
+
+int main() {
+    union student s;
+
+    printf("Enter student name: ");
+    scanf("%s", s.name);
+    printf("Enter student roll number: ");
+    scanf("%d", &s.roll_no);
+    printf("Enter date of birth: ");
+    scanf("%d", &s.dob);
+    printf("Enter department: ");
+    scanf("%s",s.dep);
+    printf("Enter graduation year: ");
+    scanf("%d", &s.gy);
+    printf("Enter studt year: ");
+    scanf("%d", &s.sy);
+    printf("Enter mobile number: ");
+    scanf("%d", &s.mn);
+    printf("Enter email: ");
+    scanf("%d", &s.email);
+
+    return 0;
+}
