@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+   char a[20];
+   printf("ENTER THE WORD=");
+   scanf("%s",a);
+   rev(a);
+   return 0;
+}
+void rev(char *str)
+{
+   if(*str)
+   {
+       rev(str+1);
+       printf("%c", *str);
+   }
+}
