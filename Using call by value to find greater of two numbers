@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("A=");
+    scanf("%d",&a);
+    printf("B=");
+    scanf("%d",&b);
+    greater(a,b);
+    return 0;
+}
+void greater(a,b)
+{
+   if(a>b)
+      printf("A IS GREATER");
+    else
+      printf("B IS GREATER");
+}
