@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int c;
+    printf("MENU:\n1.CATEGORY 1\n2.CATEGORY 2\n3.CATEGORY 3");
+    printf("ENTER THE CHOICE=");
+    scanf("%d",&c);
+    switch(c)
+    {
+        case 1:
+           category1();
+           break;
+        case 2:
+            category2();
+            break;
+        case 3:
+            category3();
+            break;
+        default:
+            printf("INVALID INPUT");
+    }
+    return 0;
+}
+void category1(){
+    printf("COFFEE\nTEA");
+}
+void category2(){
+    printf("IDLY\nDOSA");
+}
+void category3(){
+    printf("CHICKEN\nMUTTON");
+}
