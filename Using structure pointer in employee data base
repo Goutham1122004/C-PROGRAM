@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include<string.h>
+struct employee
+{
+    char name[20];
+    int id;
+    char decination[10];
+    int salary;
+    int dedection;
+    int ns;
+};
+int main()
+{
+struct employee e1;
+struct employee *p;
+p=&e1;
+scanf("%s",(*p).name);
+scanf("%d",&(*p).id);
+scanf("%s",(*p).decination);
+scanf("%d",&(*p).salary);
+scanf("%d",&(*p).dedection);
+(*p).ns=(*p).salary-(*p).dedection;
+
+printf("NAME=%s\n",(*p).name);
+printf("EMPLOYEE ID=%d\n",(*p).id);
+printf("DECINATION=%s\n",(*p).decination);
+printf("SALARY=%d\n",(*p).salary);
+printf("DEDECTION=%d\n",(*p).dedection);
+printf("NET SALARY=%d\n",(*p).ns);
+
+    return 0;
+}
