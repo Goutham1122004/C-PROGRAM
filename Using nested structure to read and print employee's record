@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+struct employee
+{
+  int id;
+  char name[20];
+  int dob;
+  int age;
+};
+struct salary
+{
+  int mon;
+  int hra;
+  int da;
+  int ts;
+  struct employee add;
+};
+int main ()
+{
+  struct salary s1;
+  scanf("%d",&s1.add.id);
+  scanf("%s",s1.add.name);
+  scanf("%d",&s1.add.dob);
+  scanf("%d",&s1.add.age);
+  scanf("%d",&s1.mon);
+  s1.hra=s1.mon*10/100;
+  s1.da=s1.mon*20/100;
+  s1.ts=s1.mon+s1.hra+s1.da;
+  
+  
+  printf("EMPLOYEE ID=%d\n",s1.add.id);
+  printf("NAME=%s\n",s1.add.name);
+  printf("DATE OF BIRTH=%d\n",s1.add.dob);
+  printf("AGE=%d\n",s1.add.age);
+  printf("SALARY=%d\n",s1.mon);
+  printf("HRA=%d\n",s1.hra);
+  printf("DA=%d\n",s1.da);
+  printf("TOTAL SALARY=%d\n",s1.ts);
+  return 0;
+}
