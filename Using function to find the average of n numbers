@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("enter the number=");
+    scanf("%d",&a);
+    average(a);
+    return 0;
+}
+void average(int b)
+{
+    int i,sum=0,avg;
+    for(i=1;i<=b;i++)
+    {
+        sum=sum+i;
+    }
+    avg=sum/b;
+    printf("AVERAGE=%d",avg);
+}
