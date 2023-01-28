@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("A=");
+    scanf("%d",&a);
+    printf("B=");
+    scanf("%d",&b);
+    adding(a,b);
+    return 0;
+}
+void adding(a,b)
+{
+    int d;
+    d=a-b;
+    printf("ANSWER=%d",d);
+}
+
