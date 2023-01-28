@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<string.h>
+struct person
+{
+    char name[20];
+    char gender[10];
+    int age;
+};
+int main()
+{
+ struct person p1;
+ struct person *p;
+p=&p1;
+scanf("%s",(*p).name);
+scanf("%s",(*p).gender);
+scanf("%d",&(*p).age);
+
+
+printf("NAME=%s\n",(*p).name);
+printf("GENDER=%s\n",(*p).gender);
+printf("AGE=%d\n",(*p).age);
+return 0;
+}
