@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<string.h>
+struct student
+{
+    char name[20];
+    int rn;
+    int s1;
+    int s2;
+    int s3;
+};
+int main()
+{
+    struct student s1;
+    struct student *p;
+    int tot,avg;
+    p=&s1;
+    strcpy((*p).name,"GOUTHAM");
+    (*p).rn=015;
+    (*p).s1=97;
+    (*p).s2=90;
+    (*p).s3=87;
+    tot=(*p).s1+(*p).s2+(*p).s3;
+    avg=tot/3;
+    
+    printf("STUDENT NAME         =%s\n",(*p).name);
+    printf("STUDENT ROLL NO      =%d\n",(*p).rn);
+    printf("STUDENT MATHS MARK   =%d\n",(*p).s1);
+    printf("STUDENT COMPUTER MARK=%d\n",(*p).s2);
+    printf("STUDENT PHYSICS MARK =%d\n",(*p).s3);
+    printf("STUDENT TOTAL MARK   =%d\n",tot);
+    printf("STUDENT AVERAGE MARK =%d",avg);
+    
+    return 0;
+    
+}
