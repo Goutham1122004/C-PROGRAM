@@ -1,0 +1,55 @@
+#include<stdio.h>
+
+struct student
+{
+  int rollno;
+  char name[20];
+  int su1,su2,su3,su4,su5,su6;
+};
+int main ()
+{
+  struct student s1;
+  int tot,avg;
+  printf("ROLL NO=");
+  scanf("%d",&s1.rollno);
+    printf("NAME=");
+  scanf("%s",s1.name);
+   printf("SUBJECT 1=");
+  scanf("%d",&s1.su1);
+  printf("SUBJECT 2=");
+  scanf("%d",&s1.su2);
+  printf("SUBJECT 3=");
+  scanf("%d",&s1.su3);
+  printf("SUBJECT 4=");
+  scanf("%d",&s1.su4);
+  printf("SUBJECT 5=");
+  scanf("%d",&s1.su5);
+  printf("SUBJECT 6=");
+  scanf("%d",&s1.su6);
+  tot=s1.su1+s1.su2+s1.su3+s1.su4+s1.su5+s1.su6;
+  avg=tot/6;
+  printf("TOTAL=%d\n",tot);
+  printf("AVERAGE=%d\nGRADE=",avg);
+  if(avg>=90)
+  {
+      printf("A GRADE");
+  }
+  else if(avg>=80)
+  {
+      printf("B GRADE");
+  }
+  else if(avg>=70)
+  {
+      printf("C GRADE");
+  }
+  else if(avg>=50)
+  {
+      printf("D GRADE");
+  }
+  else if(avg<50)
+  {
+      printf("FAIL");
+  }
+  
+  return 0;
+}
