@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+struct employee
+{
+  int id;
+  char name[20];
+  char dec[20];
+  int sal;
+  int ded;
+  int ns;
+};
+int main ()
+{
+  struct employee s1;
+   printf("EMPLOYEEID=");
+  scanf("%d",&s1.id);
+  printf("NAME=");
+  scanf("%s",s1.name);
+  printf("DECINATION=");
+  scanf("%s",s1.dec);
+  printf("SALARY=");
+  scanf("%d",&s1.sal);
+  printf("DEDECTION=");
+  scanf("%d",&s1.ded);
+  s1.ns=s1.sal-s1.ded;
+  printf("NET SALARY=%d\n",s1.ns);
+  return 0;
+}
