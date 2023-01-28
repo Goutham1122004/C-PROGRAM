@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{
+    int n, fact, fib;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    fact = factorial(n);
+    fib = fibonacci(n);
+    printf("Factorial of %d: %d\n", n, fact);
+    printf("Fibonacci series of %d: %d\n", n, fib);
+    return 0;
+}
+
+int factorial(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n-1);
+}
+
+int fibonacci(int n) {
+    if (n == 0)
+        return 0;
+    else if (n == 1)
+        return 1;
+    else
+        return fibonacci(n-1) + fibonacci(n-2);
+}
