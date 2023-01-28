@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,i,sum=0,*p;
+    printf("NUMBER=");
+    scanf("%d",&n);
+    p=&n;
+    for(i=0;i<=*p;i++)
+    {
+        sum=sum+i;
+    }
+    printf("ANSWER=%d",sum);
+    return 0;
+}
+
