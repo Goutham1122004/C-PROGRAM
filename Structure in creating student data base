@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+struct student
+{
+  int rollno;
+  char name[20];
+  int su1, su2, su3;
+};
+int main ()
+{
+  struct student s1;
+  int tot,avg;
+  printf("ROLL NO=");
+  scanf("%d",&s1.rollno);
+    printf("NAME=");
+  scanf("%s",s1.name);
+   printf("SUBJECT 1=");
+  scanf("%d",&s1.su1);
+  printf("SUBJECT 2=");
+  scanf("%d",&s1.su2);
+  printf("SUBJECT 3=");
+  scanf("%d",&s1.su3);
+  tot=s1.su1+s1.su2+s1.su3;
+  avg=tot/3;
+  printf("TOTAL=%d\n",tot);
+  printf("AVERAGE=%d",avg);
+  return 0;
+}
