@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+    char z[100];
+    int v=0,c=0,d=0,s=0,sp=0,y;
+    printf("ENTER THE WORDS=");
+    scanf("%s",z);
+    for(y=0;z[y]!='\0';y++)
+    {
+        if(z[y]=='a'||z[y]=='e'||z[y]=='i'||z[y]=='o'||z[y]=='u')
+        {
+            v++;
+        }
+        else if((z[y]>='a'&&z[y]<='z')||(z[y]>='A'&&z[y]<='Z'))
+        {
+            c++;
+        }
+        else if(z[y]>='1'&&z[y]<='9')
+        {
+            d++;
+        }
+        else if(z[y]==' ')
+        {
+            s++;
+        }
+        else
+        {
+            sp++;
+        }
+    }
+    printf("Vowels=%d\n",v);
+    printf("Consonants=%d\n",c);
+    printf("Digits=%d\n",d);
+    printf("White spaces=%d\n",s);
+    printf("Special characters=%d\n",sp);
+    return 0;
+}
