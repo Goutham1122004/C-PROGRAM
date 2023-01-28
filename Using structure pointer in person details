@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<string.h>
+struct person
+{
+    char name[20];
+    char gender[10];
+    int age;
+};
+int main()
+{
+ struct person p1;
+ struct person *p;
+p=&p1;
+strcpy(p1.name,"goutham");
+strcpy(p1.gender,"male");
+p1.age=18;
+
+printf("NAME=%s\n",(*p).name);
+printf("GENDER=%s\n",(*p).gender);
+printf("AGE=%d\n",(*p).age);
+return 0;
+}
