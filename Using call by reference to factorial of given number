@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int a,c;
+    scanf("%d",&a);
+    c=fact(&a);
+    printf("ANSWER=%d",c);
+    return 0;
+}
+int fact(int*b)
+{
+    int factorial=1,i;
+    for(i=1;i<=*b;i++)
+    {
+       factorial=factorial*i;
+    }
+    return factorial;
+}
