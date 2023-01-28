@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+   int a,b,c;
+   scanf("%d",&a);
+   scanf("%d",&b);
+   c=great(a,b);
+   printf("%d",c);
+   return 0;
+}
+int great(int x,int y)
+{
+    if(x>y)
+      return x;
+    else
+      return y;
+}
+
+
