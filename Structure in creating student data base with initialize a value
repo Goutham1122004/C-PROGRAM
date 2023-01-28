@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+struct student
+{
+  int rollno;
+  char name[20];
+  int su1, su2, su3;
+};
+int main ()
+{
+  struct student s1;
+  s1.rollno=100;
+  strcpy(s1.name,"GOUTHAM");
+  s1.su1=97;
+  s1.su2=90;
+  s1.su3=87;
+  
+  printf("ROLL NO=%d\n",s1.rollno);
+  printf("NAME=%s\n",s1.name);
+  printf("SUBJECT 1=%d\n",s1.su1);
+  printf("SUBJECT 2=%d\n",s1.su2);
+  printf("SUBJECT 3=%d",s1.su3);
+  return 0;
+}
