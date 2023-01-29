@@ -1,0 +1,25 @@
+#include <stdio.h>
+struct reverse
+{
+    int a[100];
+    int n;
+    int i;
+};
+int main() 
+{
+    struct reverse s1;
+   
+    printf("Enter the size of the array: ");
+    scanf("%d", &s1.n);
+    printf("Enter an array: ");
+    for(s1.i=0;s1.i<s1.n;s1.i++)
+    {
+        scanf("%d",&s1.a[s1.i]);
+    }
+    printf("Reversed array: ");
+    for(s1.i=s1.n-1;s1.i>=0;s1.i--)
+    {
+        printf("%d\t",s1.a[s1.i]);
+    }
+    return 0;
+}
