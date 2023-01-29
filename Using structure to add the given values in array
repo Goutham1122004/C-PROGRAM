@@ -1,0 +1,22 @@
+#include <stdio.h>
+struct add
+{
+    int a[5];
+    int i;
+};
+int main()
+{
+    struct add s1;
+    int sum=0;
+    printf("ARRAY ELEMENTS=");
+    for(s1.i=0;s1.i<5;s1.i++)
+    {
+        scanf("%d",&s1.a[s1.i]);
+    }
+    for(s1.i=0;s1.i<5;s1.i++)
+    {
+        sum=sum+s1.a[s1.i];
+    }
+     printf("ANSWER=%d",sum);
+    return 0;
+}
