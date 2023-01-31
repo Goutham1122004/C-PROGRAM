@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+   float td,fl,kmlt;
+   printf("TOTAL KILOMETER TRAVELLED=");
+   scanf("%f",&td);
+   printf("TOTAL FUEL(LITER)=");
+   scanf("%f",&fl);
+   kmlt=td/fl;
+   printf("AVERAGE CONSUMING(KM/LT)=%f",kmlt);
+
+    return 0;
+}
