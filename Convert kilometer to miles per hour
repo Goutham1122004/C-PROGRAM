@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+   float miles,km;
+   printf("KILOMETER=");
+   scanf("%f",&km);
+   miles=km*0.6213712;
+   printf("MILES=%f",miles);
+
+    return 0;
+}
