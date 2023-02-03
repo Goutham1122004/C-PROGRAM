@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+ FILE *a,*b;
+ char c;
+ a=fopen("s1.txt","r");
+ b=fopen("s2.txt","w");
+ for(c=fgetc(a);c!=EOF;c=fgetc(a))
+ {
+     fputc(tolower(c),b);
+ }
+ printf("PROGRAM FINISHED SUCCESSFULLY");
+    return 0;
+}
