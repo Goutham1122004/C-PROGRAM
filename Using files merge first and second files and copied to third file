@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    FILE *a,*b,*c;
+    char d[100],f[100],g[100],e;
+    printf("FIRST FILE NAME=");
+    scanf("%s",d);
+    a=fopen(d,"r");
+    printf("SECOND FILE NAME=");
+    scanf("%s",f);
+    b=fopen(f,"r");
+    printf("THIRD FILE NAME=");
+    scanf("%s",g);
+    c=fopen(g,"w");
+    while((e=fgetc(a))!=EOF)
+    {
+        fputc(e,c);
+    }
+    while((e=fgetc(b))!=EOF)
+    {
+        fputc(e,c);
+    }
+    printf("FIRST AND SECOND FILES ARE MERGED AND COPED TO THIRD FILE SUCCESSFULLY");
+    fclose(a);
+    fclose(b);
+    fclose(c);
+    return 0;
+}
