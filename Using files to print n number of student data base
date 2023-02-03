@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    FILE *a;
+    int n,rollno,s1,s2,s3,i,tot,avg;
+    char name[20];
+    a=fopen("goutha.txt","w");
+    printf("ENTER NUMBER OF STUDENTS=");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    printf("\nNAME=");
+    scanf("%s",name);
+    fprintf(a,"\nNAME=%s\n",name);
+    printf("ROLLNO=");
+    scanf("%d",&rollno);
+     fprintf(a,"ROLLNO=%d\n",rollno);
+    printf("SUBJECT 1=");
+    scanf("%d",&s1);
+     fprintf(a,"SUBJECT 1=%d\n",s1);
+    printf("SUBJECT 2=");
+    scanf("%d",&s2);
+     fprintf(a,"SUBJECT 2=%d\n",s2);
+    printf("SUBJECT 3=");
+    scanf("%d",&s3);
+     fprintf(a,"SUBJECT 3=%d\n",s3);
+     tot=s1+s2+s3;
+     avg=tot/3;
+     if(avg>50)
+     {
+         printf("%s pass in all subject",name);
+         fprintf(a,"%s pass in all subject",name);
+     }
+     else
+     {
+         printf("%s fail in all subject",name);
+         fprintf(a,"%s fail in all subject",name);
+     }
+    }
+    printf("\nPROGRAM FINISHED SUCCESSFULLY");
+    fclose(a);
+    return 0;
+}
