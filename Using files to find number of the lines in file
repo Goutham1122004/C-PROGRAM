@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+   FILE *f;
+   char a[20],b;
+   int c=0;
+   printf("ENTER THE FILENAME=");
+   scanf("%s",a);
+   f=fopen(a,"r");
+   if(f==NULL)
+   {
+       printf("FILES DOESN'T EXISTS");
+   }
+   for(b=fgetc(f);b!=EOF;b=fgetc(f))
+      if(b=='\n')
+        c=c+1;
+        
+    printf("THE NUMBER OF LINES ARE=%d",c+1);
+   
+   
+    return 0;
+}
