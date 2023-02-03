@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    FILE *i,*o;
+    char a[25],b;
+    printf("ENTER THE FILE NAME=");
+    scanf("%s",a);
+    i=fopen(a,"r");
+    printf("ENTER THE FILE NAME=");
+    scanf("%s",a);
+    o=fopen(a,"w");
+    b = fgetc(i);
+    while(b!=EOF)
+    {
+        fputc(b,o);
+        b = getc(i);
+    }
+    printf("FILES ARE COPED");
+    fclose(i);
+    fclose(o);
+    return 0;
+}
