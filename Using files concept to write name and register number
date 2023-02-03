@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    FILE *f;
+    char name[20];
+    int reg;
+    f=fopen("first.txt","w+");
+    printf("NAME=");
+    scanf("%s",name);
+        
+    printf("REGISTER=");
+    scanf("%d",&reg);
+    fprintf(f,"NAME=%s\n",name);
+    fprintf(f,"REGISTER=%d",reg);
+    fclose(f);
+    return 0;
+}
