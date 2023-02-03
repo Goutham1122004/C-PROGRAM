@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=25,b=20;
+    int *p1=&b;
+    int **p2=&p1;
+    
+    printf("%d %d",*p1,**p2);
+
+    return 0;
+}
