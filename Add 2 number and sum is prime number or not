@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i,count=0,a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    c=a+b;
+    printf("SUM=%d\n",c);
+    for(i=1;i<=c;i++)
+    {
+        if(c%i==0)
+        count=count+1;
+    }
+    if(count==2)
+    printf("IT IS PRIME NUMBER");
+    else
+    printf("it is not a prime number");
+    return 0;
+    
+}
