@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main(){
+    int op1, op2, res;
+    char op;
+
+    printf("Enter first operand: ");
+    scanf("%d", &op1);
+    printf("Enter second operand: ");
+    scanf("%d", &op2);
+    printf("Enter operator: ");
+    scanf(" %c", &op);
+
+    switch(op){
+        case '+':
+            res = op1 + op2;
+            break;
+        case '-':
+            res = op1 - op2;
+            break;
+        case '*':
+            res = op1 * op2;
+            break;
+        case '/':
+            res = op1 / op2;
+            break;
+        case '%':
+            res = op1 % op2;
+            break;
+        default:
+            printf("Invalid operator\n");
+            break;
+    }
+
+    printf("Result: %d\n", res);
+
+    return 0;
+}
