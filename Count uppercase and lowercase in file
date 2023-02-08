@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    int upper_count = 0, lower_count = 0;
+    char ch;
+    FILE *fp;
+    fp = fopen("sample.txt", "r");
+    while((ch = getc(fp)) != EOF)
+    {
+        if(isupper(ch))
+            upper_count++;
+        if(islower(ch))
+            lower_count++;
+    }
+    printf("Uppercase letters: %d\n", upper_count);
+    printf("Lowercase letters: %d\n", lower_count);
+    fclose(fp);
+    return 0;
+}
