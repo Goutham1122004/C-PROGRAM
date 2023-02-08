@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+  int a[10],i,b[10],n;
+  printf("N=");
+  scanf("%d",&n);
+  printf("\nEnter the  first values:");
+  for(i=0;i<n;i++)
+  {
+      scanf("%d",&a[i]);
+  }
+  printf("\nEnter the  second values:");
+  for(i=0;i<n;i++)
+  {
+      scanf("%d",&b[i]);
+  }
+  
+     if(a[i]!=b[i])
+     {
+         printf("ARRAY NOT EQUAL");
+     }
+     else 
+      {
+         printf("ARRAY ARE EQUAL");
+      }
+  return 0;
+}
