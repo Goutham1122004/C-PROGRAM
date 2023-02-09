@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a[10],n,i,sum=0;
+    printf("N=");
+    scanf("%d",&n);
+    printf("ENTER THE ARRAY ELEMENTS=");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+      sum=sum+a[i];  
+    }
+     printf("ASNWER=%d",sum);
+    return 0;
+}
