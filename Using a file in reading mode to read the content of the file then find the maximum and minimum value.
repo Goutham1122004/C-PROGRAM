@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+   FILE *a;
+   int i,max,min;
+   a=fopen("go.txt","w");
+   for(i=1;i<=10;i++)
+   {
+       fprintf(a,"%d\n",i);
+   }
+   fclose(a);
+   
+   a=fopen("go.txt","r");
+   while(fscanf(a,"%d",&i)!=EOF)
+   {
+       if(i>max)
+       max=i;
+       if(i<min)    
+       min=i;
+   }
+   fprintf("MAX=%d\n",max);
+   fprintf("MIN=%d",min);
+   return 0;
+}
