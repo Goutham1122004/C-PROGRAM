@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[100];
+    printf("A=");
+    scanf("%s",a);
+    if(palindrome(a))
+    {
+        printf("IT IS PALINDROME");
+    }
+    else
+    {
+        printf("IT IS NOT A PALINDROME");
+    }
+}
+int palindrome(char a[])
+{
+    int l=0,h=strlen(a)-1;
+    while(h>1)
+    {
+        if(a[l++]!=a[h--])
+        {
+            return 0;
+        }
+        return 1;
+    }
+}
