@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float s,area;
+    printf("Enter a input: ");
+    scanf("%f",&s);
+    area=(sqrt(3)/4)*s*s;
+    printf("Area of the equilateral triangle= %.2f",area);
+    return 0;
+}
