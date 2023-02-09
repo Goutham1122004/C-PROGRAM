@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+    int a, b, c, u, v, i, j, k;
+    printf("Enter values for a, b, c, u, v, i, j, and k: \n");
+    scanf("%d %d %d %d %d %d %d %d", &a, &b, &c, &u, &v, &i, &j, &k);
+    int x = a + b * 5 / 4 + c % 3 * 5;
+    int y = (u > v) ? u : v;
+    int z = ++i && ++j && ++k;
+    printf("x = %d, y = %d, z = %d\n", x, y, z);
+
+    return 0;
+}
