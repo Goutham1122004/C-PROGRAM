@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    char S[100], T[100];
+    int index = -1,i;
+    printf("Enter string S: ");
+    scanf("%s", S);
+    printf("Enter string T: ");
+    scanf("%s", T);
+    for ( i = 0; i < strlen(S); i++) {
+        if (S[i] == T[0]) {
+            index = i;
+            break;
+        }
+    }
+    printf("Index of T in S is: %d\n", index);
+    return 0;
+}
