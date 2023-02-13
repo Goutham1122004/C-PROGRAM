@@ -1,0 +1,14 @@
+#include <stdio.h>
+int add(int ,int);
+int subtract(int ,int);
+int multiply(int ,int);
+int divide(int ,int);
+int main() 
+{
+    int a = 10, b = 5;
+    printf("%d + %d = %d\n", a, b, add(a, b));
+    printf("%d - %d = %d\n", a, b, subtract(a, b));
+    printf("%d * %d = %d\n", a, b, multiply(a, b));
+    printf("%d / %d = %d\n", a, b, divide(a, b));
+    return 0;
+}
