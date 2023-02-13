@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void changeValue(int **ptr) {
+   **ptr = 30;
+}
+
+int main() {
+   int value = 20;
+   int *ptr = &value;
+   int **ptrToPtr = &ptr;
+
+   printf("Original Value: %d\n", value);
+
+   changeValue(ptrToPtr);
+
+   printf("Changed Value: %d\n", value);
+
+   return 0;
+}
