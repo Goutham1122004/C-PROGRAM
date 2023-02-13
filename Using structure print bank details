@@ -1,0 +1,35 @@
+
+#include <stdio.h>
+struct people
+{
+    int ac;
+    char name[20];
+    int bal;
+};
+int main()
+{
+    struct people p;
+    int n,i;
+    printf("N=");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("ACOOUNT NUMBER=");
+        scanf("%d",&p.ac);
+        printf("NAME=");
+        scanf("%s",p.name);
+        printf("BALANCE=");
+        scanf("%d",&p.bal);
+    }
+    printf("ACOOUNT BALANCE WILL BE LESS THAN 100\n");
+    for(i=0;i<n;i++)
+    {
+        if(p.bal<100)
+        {
+           printf("ACOOUNT NUMBER=%d\n",p.ac);
+           printf("NAME=%s\n",p.name);
+        }
+    }
+    return 0;
+}
+
