@@ -1,0 +1,11 @@
+#include <stdio.h> 
+int main() { 
+ int normal_variable = 10; 
+ int *pointer_variable; 
+ pointer_variable = &normal_variable; 
+ printf("Value of normal_variable: %d\n", normal_variable); 
+ printf("Value of *pointer_variable: %d\n", *pointer_variable); 
+ printf("Address of normal_variable: %p\n", &normal_variable); 
+ printf("Address of pointer_variable: %p\n", pointer_variable); 
+ return 0; 
+}
