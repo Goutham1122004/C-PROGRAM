@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+   char filename[100];
+   int characters = 0, spaces = 0, tabs = 0, newlines = 0;
+   char c;
+   FILE *fp;
+
+   printf("Enter the filename: ");
+   scanf("%s", filename);
+
+   fp = fopen(filename, "r");
+
+   if (fp == NULL) {
+      printf("Error: Unable to open the file\n");
+      return 1;
+   }
+
+   while ((c = getc(fp)) != EOF) {
+      characters++;
+      if (c == ' ') {
+         spaces++;
+      }
+      else if (c == '\t') {
+         tabs++;
+      }
+      else if (c == '\n') {
+         newlines++;
+      }
+   }
+
+   fclose(fp);
+
+   printf("Number of characters: %d\n", characters);
+   printf("Number of spaces: %d\n", spaces);
+   printf("Number of tabs: %d\n", tabs);
+   printf("Number of newlines: %d\n", newlines);
+
+   return 0;
+}
+
